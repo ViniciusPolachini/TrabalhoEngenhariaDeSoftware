@@ -15,6 +15,7 @@ export default function Perfil(){
 
     return(
         <Painel btns={btn}>
+  
             <Conteudo>
                 <Tabela></Tabela>
             </Conteudo>
