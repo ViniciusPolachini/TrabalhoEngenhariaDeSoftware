@@ -14,7 +14,7 @@ export const Container = styled.div `
     flex-direction: column;
     
     > Button {
-      height: 25vh;
+      height: 100vh;
       font-size: 2vw;
     }
   }

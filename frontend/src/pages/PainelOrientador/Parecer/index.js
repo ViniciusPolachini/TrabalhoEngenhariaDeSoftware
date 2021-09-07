@@ -5,9 +5,8 @@ import Painel from '../../../components/Painel/index';
 import Tabela from './TabelaParecer/index';
 
 const btn = [
-    {nome: 'Cadastros', url: '/CPP/Cadastrar'},
-    {nome: 'Parecer', url: '/CPP/Parecer'},
-    {nome: 'Históricos', url: '/CPP/Historicos'},
+    {nome: 'Parecer', url: '/Orientador/Parecer'},
+    {nome: 'Historico', url: '/Orientador/Historico'},
     {nome: 'Sair', url: '/'},
 ]
 

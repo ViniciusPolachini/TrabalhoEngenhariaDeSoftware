@@ -1,33 +1,26 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
+import Home from './pages/Home/index';
+
+import ParecerCPP from './pages/PainelCPP/Parecer/index';
+
+import PerfilAluno from './pages/PainelAluno/Perfil/index';
+import RelatorioAluno from './pages/PainelAluno/Relatorio/index';
+
+import ParecerOrientador from './pages/PainelOrientador/Parecer/index';
+
+
 export default function Routes(){
     return (
         <BrowserRouter>
-          {/* <Switch>
+          <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/login" component={Login}/>
-            <Route path="/register" component={Register}/>
-            <Route path="/search" component={Search}/>
-            <Route path="/cart" component={Cart}/>
-            <ClientRoute path="/info" component={Info}/>
-            <Route path="/checkout" component={Checkout}/>
-            <Route path="/confirm" component={Confirm}/>
-    
-            <AdminRoute path="/admin/products" component={Products}/>
-            <AdminRoute path="/admin/comments" component={Comments}/>
-            <AdminRoute path="/admin/customers" component={Customers}/>
-            <AdminRoute path="/admin/categories" component={Categories}/>
-            <AdminRoute path="/admin/advertising" component={Advertising}/>
-            <AdminRoute path="/admin/subcategories" component={Subcategories}/>
-            <AdminRoute path="/admin/profile" component={Profile}/>
-    
-            <AdminMasterRoute path="/admin/admins" component={Admins} />
-    
-            <Route path="/admin" component={LoginAdm}/>
-    
-            <Route path="/:product" exact component={DescriptionProducts}/>
-          </Switch> */}
+            <Route path="/CPP/Parecer" exact component={ParecerCPP} />
+            <Route path="/Orientador/Parecer" exact component={ParecerOrientador} />
+            <Route path="/Aluno/Perfil" exact component={PerfilAluno} />
+            <Route path="/Aluno/Relatorio" exact component={RelatorioAluno} />
+          </Switch>
         </BrowserRouter>
       );
 }
