@@ -5,6 +5,12 @@ import { Conteudo } from './style';
 import {questoes} from './questionario';
 import Painel from '../../../components/Painel/index';
 
+const btn = [
+    {nome: 'Perfil', url: '/Aluno/Perfil'},
+    {nome: 'Relatório', url: '/Aluno/Relatorio'},
+    {nome: 'Histórico', url: '/Aluno/Historico'},
+    {nome: 'Sair', url: '/'},
+]
 
 export default function Relatorio(){
     const [usuario, setUsuario] = useState('Carlos');
@@ -28,7 +34,7 @@ export default function Relatorio(){
     }
 
     return(
-        <Painel btns={['Perfil', 'Relatório', 'Histórico', 'Sair']}>
+        <Painel btns={btn}>
             <Conteudo>
                 <Form
                     layout="vertical"

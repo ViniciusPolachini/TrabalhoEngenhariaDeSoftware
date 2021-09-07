@@ -1,13 +1,11 @@
 import React from 'react'
 import 'antd/dist/antd.css';
 
-import Perfil from './pages/PainelOrientador/Parecer/index'
+import Routes from './routes'
 
 function App() {
   return (
-    <div className="App">
-      <Perfil></Perfil>
-    </div>
+      <Routes></Routes>
   );
 }
 
