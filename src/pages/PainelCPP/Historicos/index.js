@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Conteudo } from './style';
 import Painel from '../../../components/Painel/index';
-import Tabela from './TabelaParecer/index';
+import TabelaHistorico from './TabelaHistorico/index'
 
 const btn = [
     {nome: 'Cadastros', url: '/CPP/Cadastrar'},
@@ -11,13 +11,12 @@ const btn = [
     {nome: 'Sair', url: '/'},
 ]
 
-export default function Parecer(){
-    const [usuario, setUsuario] = useState('Carlos');
+export default function Historico(){
 
     return(
         <Painel btns={btn}>
             <Conteudo>
-                <Tabela></Tabela>
+                <TabelaHistorico></TabelaHistorico>
             </Conteudo>
         </Painel>
     );
